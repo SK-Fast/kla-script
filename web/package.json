@@ -1,0 +1,17 @@
+{
+  "name": "fr-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx pegjs ./pegjs/kla.pegjs && browserify compiler.js -o bundle.js",
+    "test": "node compiler.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "console-log-colors": "^0.2.3",
+    "pegjs": "^0.10.0"
+  }
+}
